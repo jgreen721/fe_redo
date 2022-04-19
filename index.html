@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <nav>
+        <div class="nav-col-one">
+          <div class="nav-col-one-content">
+            <h1 class="header-h1">snap</h1>
+            <ul class="lrg-screen-links">
+              <li class="lrg-screen-item">
+                <div class="lrg-screen-item-row arrowbtn">
+                  <h3 class="lrg-screen-h3">Features</h3>
+                  <img
+                    class="arrow-icon"
+                    src="./images/icon-arrow-up.svg"
+                    alt="arrow-icon"
+                  />
+                </div>
+                <div class="dropdown dropdown1 hide-menu">
+                  <div class="dropdown-content">
+                    <ul class="drop-down-list">
+                      <li class="drop-down-item">
+                        <img src="./images/icon-todo.svg" alt="dropdown-img" />
+                        <h4 class="dropdown-h4">Todo List</h4>
+                      </li>
+                      <li class="drop-down-item">
+                        <img
+                          src="./images/icon-calendar.svg"
+                          alt="dropdown-img"
+                        />
+                        <h4 class="dropdown-h4">Calendar</h4>
+                      </li>
+                      <li class="drop-down-item">
+                        <img
+                          src="./images/icon-reminders.svg"
+                          alt="dropdown-img"
+                        />
+                        <h4 class="dropdown-h4">Reminders</h4>
+                      </li>
+                      <li class="drop-down-item">
+                        <img
+                          src="./images/icon-planning.svg"
+                          alt="dropdown-img"
+                        />
+                        <h4 class="dropdown-h4">Planning</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="lrg-screen-item">
+                <div class="lrg-screen-item-row arrowbtn">
+                  <h3 class="lrg-screen-h3">Company</h3>
+                  <img
+                    class="arrow-icon"
+                    src="./images/icon-arrow-up.svg"
+                    alt="arrow-icon"
+                  />
+                </div>
+                <div class="dropdown dropdown2 hide-menu">
+                  <div class="dropdown-content">
+                    <ul class="drop-down-list">
+                      <li class="drop-down-item">
+                        <h4 class="dropdown-h4">History</h4>
+                      </li>
+                      <li class="drop-down-item">
+                        <h4 class="dropdown-h4">Our Team</h4>
+                      </li>
+                      <li class="drop-down-item">
+                        <h4 class="dropdown-h4">Blog</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="lrg-screen-item">
+                <h3 class="lrg-screen-h3">Careers</h3>
+              </li>
+              <li class="lrg-screen-item">
+                <h3 class="lrg-screen-h3">About</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-col-two">
+          <div class="button-row">
+            <button class="nav-btn">Login</button>
+            <button class="nav-btn">Register</button>
+          </div>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section>
+          <div class="section-col">
+            <div class="section-content">
+              <div class="section-h1-div">
+                <h1 class="section-h1">Make</h1>
+                <h1 class="section-h1">remote work</h1>
+              </div>
+              <div class="p-div">
+                <p class="section-p">
+                  Get your team in sync, no matter your location. Streamline
+                  processes, create team rituals, and watch productivity soar.
+                </p>
+              </div>
+              <button class="section-btn">Learn More</button>
+              <div class="icon-row">
+                <img
+                  class="section-icon"
+                  src="./images/client-databiz.svg"
+                  alt="icon"
+                />
+                <img
+                  class="section-icon"
+                  src="./images/client-audiophile.svg"
+                  alt="icon"
+                />
+                <img
+                  class="section-icon"
+                  src="./images/client-meet.svg"
+                  alt="icon"
+                />
+                <img
+                  class="section-icon"
+                  src="./images/client-maker.svg"
+                  alt="icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="section-col">
+            <div class="img-wrapper">
+              <img
+                class="hero-img"
+                src="./images/image-hero-mobile.png"
+                alt="hero-img"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="mobile-nav hide-mobile">
+        <div class="close-div">
+          <h1 class="close">&times;</h1>
+        </div>
+        <div class="mobile-main">
+          <ul class="mobile-menu">
+            <li class="mobile-item lrg-screen-item arrowbtn">
+              <div class="mobile-row">
+                <h3 class="mobile-h3">Features</h3>
+                <img
+                  class="arrow-icon"
+                  src="./images/icon-arrow-up.svg"
+                  alt="arrow"
+                />
+              </div>
+
+              <div class="mobile-dropdown mobile-dropdown1 hide-menu">
+                <div class="dropdown-content">
+                  <ul class="drop-down-list">
+                    <li class="drop-down-item">
+                      <img src="./images/icon-todo.svg" alt="dropdown-img" />
+                      <h4 class="dropdown-h4">Todo List</h4>
+                    </li>
+                    <li class="drop-down-item">
+                      <img
+                        src="./images/icon-calendar.svg"
+                        alt="dropdown-img"
+                      />
+                      <h4 class="dropdown-h4">Calendar</h4>
+                    </li>
+                    <li class="drop-down-item">
+                      <img
+                        src="./images/icon-reminders.svg"
+                        alt="dropdown-img"
+                      />
+                      <h4 class="dropdown-h4">Reminders</h4>
+                    </li>
+                    <li class="drop-down-item">
+                      <img
+                        src="./images/icon-planning.svg"
+                        alt="dropdown-img"
+                      />
+                      <h4 class="dropdown-h4">Planning</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-item lrg-screen-item arrowbtn">
+              <div class="mobile-row">
+                <h3 class="mobile-h3">Company</h3>
+                <img
+                  class="arrow-icon"
+                  src="./images/icon-arrow-up.svg"
+                  alt="arrow"
+                />
+              </div>
+              <div class="mobile-dropdown mobile-dropdown2 hide-menu">
+                <div class="dropdown-content">
+                  <ul class="drop-down-list">
+                    <li class="drop-down-item">
+                      <h4 class="dropdown-h4">History</h4>
+                    </li>
+                    <li class="drop-down-item">
+                      <h4 class="dropdown-h4">Our Team</h4>
+                    </li>
+                    <li class="drop-down-item">
+                      <h4 class="dropdown-h4">Blog</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-item">
+              <div class="mobile-row">
+                <h3 class="mobile-h3">Careers</h3>
+              </div>
+            </li>
+            <li class="mobile-item">
+              <div class="mobile-row">
+                <h3 class="mobile-h3">About</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script>
+      var heroImg = document.querySelector(".hero-img");
+      var burgerBtn = document.querySelector(".burger");
+      var closeBtn = document.querySelector(".close");
+      var mobileMenu = document.querySelector(".mobile-nav");
+      var arrowBtns = document.querySelectorAll(".arrowbtn");
+      var mobileBtns = document.querySelectorAll(".mobile-item");
+      var images = [
+        "./images/image-hero-desktop.png",
+        "./images/image-hero-mobile.png",
+      ];
+
+      onresize = (e) => {
+        if (e.target.innerWidth < 400) {
+          console.log("mobile");
+          heroImg.setAttribute("src", images[1]);
+          document
+            .querySelectorAll(".dropdown")
+            .forEach((d) => d.classList.add("hide-menu"));
+          document.querySelectorAll(".arrow-icon").forEach((el) => {
+            el.setAttribute("src", "./images/icon-arrow-up.svg");
+          });
+        } else {
+          console.log("desktop");
+          heroImg.setAttribute("src", images[0]);
+        }
+      };
+
+      arrowBtns.forEach((arrowBtn) => {
+        arrowBtn.onclick = (e) => {
+          toggleMenu(e);
+          e.stopPropagation();
+        };
+      });
+
+      function toggleMenu(e) {
+        console.log(e.target.querySelector(".arrow-icon").getAttribute("src"));
+        switch (e.target.querySelector(".arrow-icon").getAttribute("src")) {
+          case "./images/icon-arrow-up.svg":
+            console.log("up");
+            e.target
+              .querySelector(".arrow-icon")
+              .setAttribute("src", "./images/icon-arrow-down.svg");
+            e.target
+              .closest(".lrg-screen-item")
+              .querySelector(".dropdown")
+              .classList.remove("hide-menu");
+
+            break;
+
+          case "./images/icon-arrow-down.svg":
+            console.log("down");
+            e.target
+              .querySelector(".arrow-icon")
+              .setAttribute("src", "./images/icon-arrow-up.svg");
+            e.target
+              .closest(".lrg-screen-item")
+              .querySelector(".dropdown")
+              .classList.add("hide-menu");
+
+            break;
+        }
+        // if(e.target.getAttribute("src"))
+      }
+
+      mobileBtns.forEach((btn) => {
+        btn.onclick = (e) => {
+          if (e.target.classList[0] !== "mobile-row") return;
+          switch (e.target.querySelector(".arrow-icon").getAttribute("src")) {
+            case "./images/icon-arrow-up.svg":
+              console.log("up");
+              e.target
+                .querySelector(".arrow-icon")
+                .setAttribute("src", "./images/icon-arrow-down.svg");
+              e.target
+                .closest(".mobile-item")
+                .querySelector(".mobile-dropdown")
+                .classList.remove("hide-menu");
+
+              break;
+
+            case "./images/icon-arrow-down.svg":
+            case "./images/icon-arrow-down.svg":
+              console.log("down");
+              e.target
+                .querySelector(".arrow-icon")
+                .setAttribute("src", "./images/icon-arrow-up.svg");
+              e.target
+                .closest(".mobile-item")
+                .querySelector(".mobile-dropdown")
+                .classList.add("hide-menu");
+
+              break;
+          }
+        };
+      });
+
+      closeBtn.onclick = () => mobileMenu.classList.add("hide-mobile");
+
+      onclick = (e) => {
+        // console.log(e.target.classList[0]);
+        //toggle mobile-menu if user clicks burger
+
+        if (e.target.classList[0] === "burger") {
+          mobileMenu.classList.remove("hide-mobile");
+          return;
+        }
+        //check to see if client within mobile-nav boundary
+        if (
+          document
+            .querySelector(".mobile-nav")
+            .querySelector("." + e.target.classList[0])
+        ) {
+          // console.log("your in the moble menu");
+          return;
+        }
+        console.log(e.target);
+        // if (e.target.classList.contains("lrg-screen-item"))
+        //   return toggleMenu(e);
+        if (e.target.classList.contains("dropdown")) return;
+
+        document
+          .querySelectorAll(".dropdown")
+          .forEach((d) => d.classList.add("hide-menu"));
+
+        document
+          .querySelectorAll(".mobile-dropdown")
+          .forEach((d) => d.classList.add("hide-menu"));
+
+        console.log(
+          "LENGTH",
+          document.querySelectorAll(".mobile-dropdown").length
+        );
+
+        document.querySelectorAll(".arrow-icon").forEach((el) => {
+          el.setAttribute("src", "./images/icon-arrow-up.svg");
+        });
+
+        mobileMenu.classList.add("hide-mobile");
+      };
+
+      mobileMenu.onclick = (e) => {
+        if (
+          e.target.classList[0] === "mobile-main" ||
+          e.target.classList[0] === "close-div"
+        ) {
+          document
+            .querySelectorAll(".mobile-dropdown")
+            .forEach((m) => m.classList.add("hide-menu"));
+          document
+            .querySelectorAll(".arrow-icon")
+            .forEach((el) =>
+              el.setAttribute("src", "./images/icon-arrow-up.svg")
+            );
+        }
+      };
+    </script>
+  </body>
+</html>
